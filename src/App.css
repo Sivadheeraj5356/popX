@@ -1,0 +1,8 @@
+.input-text {
+  @apply absolute left-2 top-1/2 -translate-y-1/2 text-[#6c25ff] transition-all duration-200 pointer-events-none bg-[#fdfdfd] px-1;
+}
+
+input[type="text"]:focus ~ .input-text,
+input[type="text"]:not(:placeholder-shown) ~ .input-text {
+  @apply -top-0.5 left-2 text-sm text-[#6c25ff];
+}
